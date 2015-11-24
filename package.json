@@ -1,26 +1,27 @@
 {
-  "name" : "node-url-shortener",
-  "description" : "URL Shortener using NodeJS and Redis",
-  "repository" : {
-    "type" : "git",
-    "url" : "http://github.com/dotzero/node-url-shortener"
+  "name": "node-url-shortener",
+  "description": "URL Shortener using NodeJS and Redis",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/dotzero/node-url-shortener"
   },
-  "dependencies" : {
-    "express" : "~4.1.0",
-    "redis" : "~0.10.0",
-    "morgan" : "~1.0.0",
-    "optimist" : "~0.6.0",
-    "serve-favicon" : "~2.0.0",
-    "body-parser" : "~1.0.0",
-    "method-override" : "~1.0.0",
-    "debug" : "~0.7.4",
-    "ejs" : "~1.0.0",
-    "mocha" : "~1.19.0",
-    "expect.js" : "~0.3.1",
-    "superagent" : "~0.18.0"
+  "dependencies": {
+    "base58": "^0.1.0",
+    "body-parser": "~1.0.0",
+    "debug": "~0.7.4",
+    "ejs": "~1.0.0",
+    "expect.js": "~0.3.1",
+    "express": "~4.1.0",
+    "method-override": "~1.0.0",
+    "mocha": "~1.19.0",
+    "morgan": "~1.0.0",
+    "optimist": "~0.6.0",
+    "redis": "~0.10.0",
+    "serve-favicon": "~2.0.0",
+    "superagent": "~0.18.0"
   },
   "devDependencies": {
-    "mocha" : "~1.19.0"
+    "mocha": "~1.19.0"
   },
   "scripts": {
     "test": "mocha",
