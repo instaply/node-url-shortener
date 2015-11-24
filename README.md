@@ -10,9 +10,9 @@ URL Shortener using NodeJS and Redis.
 
 ## Install on dev machine
 
-*  `git clone https://github.com/dotzero/node-url-shortener myproject`
+*  `git clone`
 *  `cd myproject`
 *  `npm install`
-*  start with `node app.js --url "http://127.0.0.1:3000"`
+*  start with `node app.js` and open `http://127.0.0.1:5000`
 *  to run tests : `npm test`
 
