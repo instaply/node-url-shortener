@@ -1,9 +1,6 @@
 {
   "name" : "node-url-shortener",
   "description" : "URL Shortener using NodeJS and Redis",
-  "version" : "0.6.0",
-  "author" : "dotzero <mail@dotzero.ru>",
-  "engines" : ["node"],
   "repository" : {
     "type" : "git",
     "url" : "http://github.com/dotzero/node-url-shortener"
@@ -26,6 +23,7 @@
     "mocha" : "~1.19.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "node app.js"
   }
 }
