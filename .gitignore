@@ -1,2 +1,5 @@
 node_modules/*
 redis/*
+config/opts-dev.js
+config/opts-prod.js
+npm-debug.log
