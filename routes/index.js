@@ -1,5 +1,10 @@
 module.exports = function (app, nus) {
   var opts = app.get('opts');
+  var API_KEY = process.env.API_KEY;
+
+  if (!API_KEY) {
+    throw new Error('No API key env');
+  }
 
   app.route('/').all(function (req, res) {
     res.render('index');
@@ -7,6 +12,10 @@ module.exports = function (app, nus) {
 
   app.route('/api/v1/shorten')
     .post(function (req, res) {
+      if (req.headers['X-Api-Key'] !== API_KEY) {
+        return sendResponse(res, 400);
+      }
+
       nus.shorten(req.body['long_url'], function (err, reply) {
         if (err) {
           sendResponse(res, err);
