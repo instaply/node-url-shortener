@@ -12,7 +12,7 @@ module.exports = function (app, nus) {
 
   app.route('/api/v1/shorten')
     .post(function (req, res) {
-      if (req.headers['X-Api-Key'] !== API_KEY) {
+      if (req.headers['x-api-key'] !== API_KEY) {
         return sendResponse(res, 400);
       }
 
